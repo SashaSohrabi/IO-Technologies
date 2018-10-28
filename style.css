@@ -24,6 +24,12 @@ body {
     color: #3a91e2;
 }
 
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
 .main {
     display: flex;
     position: relative;
@@ -47,7 +53,6 @@ body {
     background: transparent url(./img/ellips.svg) no-repeat bottom;
     background-size: 100% 80%;
 }
-
 
 .main__inner {
     z-index: 1;
@@ -97,4 +102,120 @@ body {
 
 .link-button:hover {
     background-color: #6a83be;
+}
+
+.aside {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    min-width: 500px;
+    width: 49%;
+    padding-left: 120px;
+    min-height: 100%;
+    background-image: url(./img/right_block.svg);
+    background-origin: border-box;
+    background-size: cover;
+}
+
+.aside__inner {
+    position: relative;
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider__content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+.slider__element {
+    width: 49%;
+    padding-right: 110px;
+}
+
+.form {
+    position: relative;
+    margin: auto;
+}
+
+.form__greeting {
+    font-size: 32px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.88;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 17px;
+}
+
+.form__message {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #616983;
+}
+
+.form__field-box {
+    margin: 46px 0;
+}
+
+.input__container {
+    position: relative;
+}
+
+.form__text-input {
+    position: relative;
+    border: none;
+    border-bottom: #61698338 1px solid;
+    width: 100%;
+    background: none;
+    padding: 23px 0;
+    margin: 23px 0;
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: normal;
+    text-align: left;
+    text-shadow: 0 0 0 #616983;
+    -webkit-text-fill-color: transparent;
+}
+
+.form__text-input:focus {
+    outline: 0;
+    text-shadow: 0 0 0 white;
+}
+
+.form__text-input[type="email"]:focus, .form__text-input[type="password"]:focus {
+    border-bottom: rgb(65, 174, 250) 1px solid;
+}
+
+.form__text-input--success {
+    border-bottom: rgb(77, 176, 131) 1px solid;
+    text-shadow: 0 0 0 white;
+}
+
+.form__text-input--error {
+    border-bottom: red 1px solid;
+    text-shadow: 0 0 0 white;
 }
