@@ -437,3 +437,139 @@ body {
         transform: translate3d(4px, 0, 0);
     }
 }
+
+/*Media Query*/
+@media only screen and (max-width: 1024px) {
+
+    .main {
+        margin-right: -15%;
+        width: 65%;
+    }
+
+    .aside {
+        width: 80%;
+        min-width: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .main {
+        width: 100%;
+        margin-left: -15%;
+        height: 100vh;
+        padding-left: 7%;
+    }
+
+    .aside {
+        background: #10172f;
+        width: 100%;
+        min-width: 400px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 105vh;
+    }
+
+    .main::after {
+        width: 90vw;
+    }
+
+    .slider {
+        height: 105vh;
+    }
+
+    .main__img {
+        margin-top: 15px;
+    }
+
+    .message {
+        line-height: 45px;
+    }
+
+    .form__text-input {
+        padding: 15px 0;
+        margin: 10px 0;
+    }
+
+    .form__field-box {
+        margin: 20px 0;
+    }
+
+    .slider__element {
+        padding-top: 30px;
+        padding-right: 120px;
+    }
+
+    .message span {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 415px) {
+
+    .aside {
+        height: 100vh;
+    }
+
+    .slider {
+        height: 100vh;
+    }
+
+    .message {
+        line-height: 50px;
+    }
+
+    .form__text-input {
+        padding: 30px 0;
+        margin: 20px 0;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .aside {
+        min-width: 370px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .main {
+        width: 116%;
+    }
+
+    .aside {
+        width: 116%;
+    }
+}
+
+/*Targeting iPad*/
+@media only screen
+and (device-width: 768px)
+and (device-height: 1024px) {
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .main {
+        height: 40vh;
+    }
+
+    .main::after {
+        width: 90vw;
+    }
+
+    .aside, .slider {
+        padding-top: 50px;
+        height: 60vh;
+        width: 100%;
+        min-width: 400px;
+    }
+}
