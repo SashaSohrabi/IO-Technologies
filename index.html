@@ -26,7 +26,7 @@
     <aside class="aside">
         <div class="slider">
             <div class="slider__content">
-                <form id="login" class="form slider__element" onsubmit='redirect()' novalidate>
+                <form id="login" class="form slider__element" onsubmit="redirect()" novalidate>
                     <p class="form__greeting">Welcome back</p>
                     <p class="form__message">Sign in to continue to IO Technologies.</p>
                     <div class="form__field-box">
@@ -52,9 +52,9 @@
                     </div>
                     <span class="form__message">Forgot your password? <a class="link" onclick="shift()">Reset</a></span>
                 </form>
-                <form id="recover" class="form slider__element" novalidate onsubmit='redirect()'>
+                <form id="recover" class="form slider__element" novalidate onsubmit="redirect()">
                     <button type="button" tabindex="-1" class="btn--return" onclick="shift()">
-                        <img class="return-img" src="./img/right-arrow.png" alt="return">
+                        <img class="arrow-left" src="./img/right-arrow.png" alt="return">
                     </button>
                     <p class="form__greeting">Forgot password?</p>
                     <div class="form__field-box">

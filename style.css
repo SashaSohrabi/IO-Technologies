@@ -316,6 +316,124 @@ body {
     cursor: pointer;
 }
 
-.return-img {
+.arrow-left {
     transform: rotate(180deg);
+}
+
+.arrow-down {
+    transform: rotate(90deg);
+}
+
+.shake {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
+}
+
+
+/*Animations*/
+@-webkit-keyframes blinds {
+    0% {
+        background-image: linear-gradient(284deg, #54c3fe, #127ef9);
+    }
+
+    20% {
+        background-image: linear-gradient(243deg, #54c3fe, #127ef9);
+    }
+
+    40% {
+        background-image: linear-gradient(202deg, #54c3fe, #127ef9);
+    }
+
+    60% {
+        background-image: linear-gradient(161deg, #54c3fe, #127ef9);
+    }
+
+    80% {
+        background-image: linear-gradient(120deg, #54c3fe, #127ef9);
+    }
+
+    100% {
+        background-image: linear-gradient(76deg, #54c3fe, #127ef9);
+    }
+}
+
+@keyframes blinds {
+    0% {
+        background-image: linear-gradient(284deg, #54c3fe, #127ef9);
+    }
+
+    20% {
+        background-image: linear-gradient(243deg, #54c3fe, #127ef9);
+    }
+
+    40% {
+        background-image: linear-gradient(202deg, #54c3fe, #127ef9);
+    }
+
+    60% {
+        background-image: linear-gradient(161deg, #54c3fe, #127ef9);
+    }
+
+    80% {
+        background-image: linear-gradient(120deg, #54c3fe, #127ef9);
+    }
+
+    100% {
+        background-image: linear-gradient(76deg, #54c3fe, #127ef9);
+    }
+}
+
+@-webkit-keyframes arrow {
+    0% {
+        -webkit-transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(10px);
+    }
+}
+
+@keyframes arrow {
+    0% {
+        -webkit-transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(10px);
+    }
+}
+
+@-webkit-keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
 }
